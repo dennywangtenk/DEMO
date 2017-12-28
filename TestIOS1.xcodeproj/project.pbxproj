@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		921B0489AD77E710F110D3A9 /* Pods_TestIOS1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91F673C1F6C08F5CC34BA2 /* Pods_TestIOS1.framework */; };
+		B03AE0471FF5BA8700157BBD /* TestIOS1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03AE0461FF5BA8700157BBD /* TestIOS1Tests.swift */; };
 		B04383931FF58BEE00C502EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04383921FF58BEE00C502EC /* AppDelegate.swift */; };
 		B04383951FF58BEE00C502EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04383941FF58BEE00C502EC /* ViewController.swift */; };
 		B04383981FF58BEE00C502EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04383961FF58BEE00C502EC /* Main.storyboard */; };
@@ -15,9 +16,22 @@
 		B043839D1FF58BEE00C502EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B043839B1FF58BEE00C502EC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B03AE0491FF5BA8700157BBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04383871FF58BEE00C502EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B043838E1FF58BEE00C502EC;
+			remoteInfo = TestIOS1;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1A91F673C1F6C08F5CC34BA2 /* Pods_TestIOS1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestIOS1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		377A3F5C42302518BC634489 /* Pods-TestIOS1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOS1.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestIOS1/Pods-TestIOS1.release.xcconfig"; sourceTree = "<group>"; };
+		B03AE0441FF5BA8700157BBD /* TestIOS1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIOS1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03AE0461FF5BA8700157BBD /* TestIOS1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIOS1Tests.swift; sourceTree = "<group>"; };
+		B03AE0481FF5BA8700157BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B043838F1FF58BEE00C502EC /* TestIOS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIOS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04383921FF58BEE00C502EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04383941FF58BEE00C502EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B03AE0411FF5BA8700157BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B043838C1FF58BEE00C502EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +78,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B03AE0451FF5BA8700157BBD /* TestIOS1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B03AE0461FF5BA8700157BBD /* TestIOS1Tests.swift */,
+				B03AE0481FF5BA8700157BBD /* Info.plist */,
+			);
+			path = TestIOS1Tests;
+			sourceTree = "<group>";
+		};
 		B04383861FF58BEE00C502EC = {
 			isa = PBXGroup;
 			children = (
 				B04383911FF58BEE00C502EC /* TestIOS1 */,
+				B03AE0451FF5BA8700157BBD /* TestIOS1Tests */,
 				B04383901FF58BEE00C502EC /* Products */,
 				61C1E7706530DF338A0A83CC /* Pods */,
 				8827BBDDFB11FC81A74C2E79 /* Frameworks */,
@@ -71,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				B043838F1FF58BEE00C502EC /* TestIOS1.app */,
+				B03AE0441FF5BA8700157BBD /* TestIOS1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +123,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B03AE0431FF5BA8700157BBD /* TestIOS1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03AE04D1FF5BA8700157BBD /* Build configuration list for PBXNativeTarget "TestIOS1Tests" */;
+			buildPhases = (
+				B03AE0401FF5BA8700157BBD /* Sources */,
+				B03AE0411FF5BA8700157BBD /* Frameworks */,
+				B03AE0421FF5BA8700157BBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B03AE04A1FF5BA8700157BBD /* PBXTargetDependency */,
+			);
+			name = TestIOS1Tests;
+			productName = TestIOS1Tests;
+			productReference = B03AE0441FF5BA8700157BBD /* TestIOS1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B043838E1FF58BEE00C502EC /* TestIOS1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04383A11FF58BEE00C502EC /* Build configuration list for PBXNativeTarget "TestIOS1" */;
@@ -121,6 +171,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Tenk IO";
 				TargetAttributes = {
+					B03AE0431FF5BA8700157BBD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B043838E1FF58BEE00C502EC;
+					};
 					B043838E1FF58BEE00C502EC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -141,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				B043838E1FF58BEE00C502EC /* TestIOS1 */,
+				B03AE0431FF5BA8700157BBD /* TestIOS1Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B03AE0421FF5BA8700157BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B043838D1FF58BEE00C502EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +273,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B03AE0401FF5BA8700157BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03AE0471FF5BA8700157BBD /* TestIOS1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B043838B1FF58BEE00C502EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +291,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B03AE04A1FF5BA8700157BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B043838E1FF58BEE00C502EC /* TestIOS1 */;
+			targetProxy = B03AE0491FF5BA8700157BBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B04383961FF58BEE00C502EC /* Main.storyboard */ = {
@@ -241,6 +320,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B03AE04B1FF5BA8700157BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2B77G5UMB;
+				INFOPLIST_FILE = TestIOS1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tenk.TestIOS1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestIOS1.app/TestIOS1";
+			};
+			name = Debug;
+		};
+		B03AE04C1FF5BA8700157BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2B77G5UMB;
+				INFOPLIST_FILE = TestIOS1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tenk.TestIOS1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestIOS1.app/TestIOS1";
+			};
+			name = Release;
+		};
 		B043839F1FF58BEE00C502EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -383,6 +494,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B03AE04D1FF5BA8700157BBD /* Build configuration list for PBXNativeTarget "TestIOS1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03AE04B1FF5BA8700157BBD /* Debug */,
+				B03AE04C1FF5BA8700157BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B043838A1FF58BEE00C502EC /* Build configuration list for PBXProject "TestIOS1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
